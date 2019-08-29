@@ -1,5 +1,7 @@
 package br.com.sensor.temperature.service;
 
+import java.util.Date;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -28,6 +30,7 @@ public class TemperatureService {
 
     	Temperature temperature = new Temperature();
     	temperature.setSensor("Temperatura");
+    	temperature.setDateCreate(new Date());
     	temperature.setValue(Utils.getRandomDoubleBetweenRange(12.00, 18.00));
     	
     	log.info(temperature.toString());

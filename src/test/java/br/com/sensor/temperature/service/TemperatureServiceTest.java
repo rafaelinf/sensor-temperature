@@ -20,14 +20,9 @@ import br.com.sensor.temperature.utils.Utils;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class TemperatureServiceTest {
-
-	@Autowired
-	private TemperatureService temperatureService;
-	
-	private static TestRestTemplate testRestTemplate;
 	
 	@BeforeClass
 	public static void runBeforeAllTestMethods() {
-		testRestTemplate = new TestRestTemplate();
+
 	}
 }
